@@ -14,10 +14,11 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Practice with React & Redux</h1>
         </header>
+
         <p className="App-intro">
           Enter Numbers and Change the Color of the Box </p>
-          <NumberForm />
-          <NumberList />
+          <NumberForm {...this.props}/>
+          <NumberList {...this.props}/>
           <ColorBox />
       </div>
     );
